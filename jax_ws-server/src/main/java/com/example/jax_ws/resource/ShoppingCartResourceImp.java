@@ -56,7 +56,7 @@ public class ShoppingCartResourceImp implements ShoppingCartResource {
             return Response.status(Response.Status.BAD_REQUEST).build();
         }
         // kiểm tra sản phẩm.
-        Product product = null;
+          Product product = null;
         try {
             product = this.productModel.findById(productId);
         } catch (SQLException e) {
